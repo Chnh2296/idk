@@ -8,16 +8,18 @@ def is_valid_guess(guess, guesses):
   return len(guess) == 5 and guess in guesses 
 
 def evaluate_guess(guess, word):
-   str = ""
+  str = ""
+
   for i in range(5):
     if guess[i] == word[i]:
       str += "\033[32m" + guess[i]
     else:
       if guess[i] in word:
-        str += "/033[33m" + guess[i]
+        str += "\033]33m" + guess[i]
       else:
-        str += "\033[0m" + guess[i]
+        str += "\033]0m" + guess[i]
 return str + "\033[0m"
+      
       
   
 
