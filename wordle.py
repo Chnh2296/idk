@@ -47,7 +47,3 @@ def wordle(guesses, answers):
 guesses = load_dictionary("guesses.txt")
 answers = load_dictionary("answers.txt")
 
-guesses_dictionary = "guesses.txt"
-answers_dictionary = "answers.txt"
-
-wordle(guesses, answers)
