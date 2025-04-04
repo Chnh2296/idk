@@ -46,4 +46,4 @@ def wordle(guesses, answers):
 
 guesses = load_dictionary("guesses.txt")
 answers = load_dictionary("answers.txt")
-
+idk(guesses, answers)
